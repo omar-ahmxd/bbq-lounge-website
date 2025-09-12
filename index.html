@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The Barbeque Lounge - Premium BBQ dining experience with artisanal preparation and sophisticated ambiance">
+    <meta name="keywords" content="BBQ, Restaurant, Premium Dining, Barbeque, Grill, Fine Dining">
+    <title>The Barbeque Lounge - Premium BBQ Experience</title>
+    <link rel="icon" type="image/png" href="TPL-logo.png">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Inter:wght@300;400;500;600;700&family=Source+Sans+3:wght@300;400;600&family=Kaushan+Script&family=Pacifico&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loadingScreen">
+        <div class="loader">
+            <div class="loading-animation">
+                <div class="ring"></div>
+                <div class="ring"></div>
+                <div class="ring"></div>
+            </div>
+            <div class="loading-content">
+                <h2 class="loading-title">
+                    <span class="title-line">The</span>
+                    <span class="title-main">Barbeque</span>
+                    <span class="title-line">Lounge</span>
+                </h2>
+                <div class="loading-line"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Custom Cursor -->
+    <div class="custom-cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="#home">
+                    <img src="TPL-logo.png" alt="TPL BBQ Lounge Logo" class="logo-img">
+                </a>
+            </div>
+            <div class="nav-menu" id="navMenu">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#about" class="nav-link">Our Story</a>
+                <a href="#menu" class="nav-link">Menu</a>
+                <a href="#gallery" class="nav-link">Gallery</a>
+                <a href="#reservations" class="nav-link">Reservations</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <div class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-video-container">
+            <video autoplay muted loop playsinline class="hero-video">
+                <source src="vecteezy_ai-generated-beef-steaks-on-barbecue-grill-with-flames-and_40708831.mp4" type="video/mp4">
+            </video>
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="hero-content">
+            <h1 class="hero-title">
+                <span class="title-line">The</span>
+                <span class="title-main">Barbeque</span>
+                <span class="title-line">Lounge</span>
+            </h1>
+            <p class="hero-subtitle">Where Tradition Meets Elegance</p>
+            <div class="hero-cta">
+                <a href="#reservations" class="btn btn-primary">Reserve Your Table</a>
+                <a href="#menu" class="btn btn-outline">Order Online</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-content">
+                    <h2 class="section-subtitle">Our Craft</h2>
+                    <h3 class="section-title">Artisanal BBQ Excellence</h3>
+                    <p class="about-text">
+                        At The Barbeque Lounge, we've redefined the art of BBQ dining. Our master pitmasters combine time-honored smoking techniques with contemporary culinary innovation, creating an experience that transcends traditional barbecue.
+                    </p>
+                    <p class="about-text">
+                        Every cut is carefully selected, every spice meticulously balanced, and every dish presented with the sophistication of fine dining while maintaining the soul of authentic BBQ.
+                    </p>
+                    <div class="about-features">
+                        <div class="feature">
+                            <i class="fas fa-fire feature-icon"></i>
+                            <h4>18-Hour Smoked</h4>
+                            <p>Low and slow perfection</p>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-award feature-icon"></i>
+                            <h4>Premium Cuts</h4>
+                            <p>Hand-selected quality meats</p>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-pepper-hot feature-icon"></i>
+                            <h4>Secret Rubs</h4>
+                            <p>House-blend spices</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-images">
+                    <div class="image-stack">
+                        <img src="photo-1555939594-58d7cb561ad1.avif" alt="BBQ Platter" class="stack-image stack-1">
+                        <img src="emerson-vieira-_aR4l6fj6wQ-unsplash.jpg" alt="Grill Master at Work" class="stack-image stack-2">
+                        <img src="istockphoto-2213556496-612x612.jpg" alt="Grilled Steak" class="stack-image stack-3">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu">
+        <div class="container">
+            <h2 class="section-subtitle">Culinary Journey</h2>
+            <h3 class="section-title">Our Signature Menu</h3>
+            
+            <div class="menu-categories">
+                <button class="menu-category active" data-category="starters">Starters</button>
+                <button class="menu-category" data-category="mains">Main Courses</button>
+                <button class="menu-category" data-category="sides">Sides</button>
+                <button class="menu-category" data-category="desserts">Desserts</button>
+                <button class="menu-category" data-category="beverages">Beverages</button>
+            </div>
+
+            <div class="menu-content">
+                <!-- Starters -->
+                <div class="menu-section active" id="starters">
+                    <div class="menu-grid">
+                        <div class="menu-item">
+                            <div class="menu-item-image">
+                                <img src="https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?w=400" alt="Smoked Wings">
+                            </div>
+                            <div class="menu-item-content">
+                                <h4 class="menu-item-name">Smoked Wings</h4>
+                                <p class="menu-item-description">Hickory-smoked wings with house-made bourbon glaze</p>
+                                <span class="menu-item-price">$16</span>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-image">
+                                <img src="https://images.unsplash.com/photo-1604908550665-327363165423?w=400" alt="Burnt Ends">
+                            </div>
+                            <div class="menu-item-content">
+                                <h4 class="menu-item-name">Burnt Ends</h4>
+                                <p class="menu-item-description">Caramelized brisket cubes with tangy BBQ sauce</p>
+                                <span class="menu-item-price">$18</span>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-image">
+                                <img src="https://images.unsplash.com/photo-1608039755401-742074f0548d?w=400" alt="Loaded Nachos">
+                            </div>
+                            <div class="menu-item-content">
+                                <h4 class="menu-item-name">BBQ Loaded Nachos</h4>
+                                <p class="menu-item-description">Pulled pork, cheese sauce, jalapeños, sour cream</p>
+                                <span class="menu-item-price">$14</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Main Courses -->
+                <div class="menu-section" id="mains">
+                    <div class="menu-grid">
+                        <div class="menu-item">
+                            <div class="menu-item-image">
+                                <img src="https://images.unsplash.com/photo-1544025162-d76694265947?w=400" alt="Texas Brisket">
+                            </div>
+                            <div class="menu-item-content">
+                                <h4 class="menu-item-name">Texas Brisket</h4>
+                                <p class="menu-item-description">18-hour smoked prime brisket with pepper crust</p>
+                                <span class="menu-item-price">$32</span>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-image">
+                                <img src="https://images.unsplash.com/photo-1628294896516-344152572ee8?w=400" alt="Baby Back Ribs">
+                            </div>
+                            <div class="menu-item-content">
+                                <h4 class="menu-item-name">Baby Back Ribs</h4>
+                                <p class="menu-item-description">Fall-off-the-bone ribs with signature dry rub</p>
+                                <span class="menu-item-price">$28</span>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-image">
+                                <img src="https://images.unsplash.com/photo-1594041680534-e8c8cdebd659?w=400" alt="Pulled Pork">
+                            </div>
+                            <div class="menu-item-content">
+                                <h4 class="menu-item-name">Carolina Pulled Pork</h4>
+                                <p class="menu-item-description">Slow-smoked shoulder with vinegar-based sauce</p>
+                                <span class="menu-item-price">$24</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sides -->
+                <div class="menu-section" id="sides">
+                    <div class="menu-grid">
+                        <div class="menu-item">
+                            <div class="menu-item-content">
+                                <h4 class="menu-item-name">Mac & Cheese</h4>
+                                <p class="menu-item-description">Five-cheese blend with crispy breadcrumb topping</p>
+                                <span class="menu-item-price">$8</span>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-content">
+                                <h4 class="menu-item-name">Coleslaw</h4>
+                                <p class="menu-item-description">Tangy vinegar slaw with fresh herbs</p>
+                                <span class="menu-item-price">$6</span>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-content">
+                                <h4 class="menu-item-name">Cornbread</h4>
+                                <p class="menu-item-description">Sweet honey butter cornbread</p>
+                                <span class="menu-item-price">$5</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Desserts -->
+                <div class="menu-section" id="desserts">
+                    <div class="menu-grid">
+                        <div class="menu-item">
+                            <div class="menu-item-content">
+                                <h4 class="menu-item-name">Bourbon Pecan Pie</h4>
+                                <p class="menu-item-description">Classic pecan pie with bourbon whipped cream</p>
+                                <span class="menu-item-price">$10</span>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-content">
+                                <h4 class="menu-item-name">Smoked Chocolate Tart</h4>
+                                <p class="menu-item-description">Dark chocolate with hint of smoke, salted caramel</p>
+                                <span class="menu-item-price">$12</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Beverages -->
+                <div class="menu-section" id="beverages">
+                    <div class="menu-grid">
+                        <div class="menu-item">
+                            <div class="menu-item-content">
+                                <h4 class="menu-item-name">Craft Beer Selection</h4>
+                                <p class="menu-item-description">Local and imported craft beers</p>
+                                <span class="menu-item-price">$8-12</span>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-content">
+                                <h4 class="menu-item-name">Signature Cocktails</h4>
+                                <p class="menu-item-description">Bourbon-based house specialties</p>
+                                <span class="menu-item-price">$14-16</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <h2 class="section-subtitle">Visual Journey</h2>
+            <h3 class="section-title">Experience The Ambiance</h3>
+            
+            <div class="gallery-grid">
+                <div class="gallery-item tall">
+                    <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=800" alt="BBQ Platter">
+                    <div class="gallery-overlay">
+                        <h4>Signature Platter</h4>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=600" alt="Restaurant Interior">
+                    <div class="gallery-overlay">
+                        <h4>Elegant Interior</h4>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1544025162-d76694265947?w=600" alt="BBQ Ribs">
+                    <div class="gallery-overlay">
+                        <h4>Premium Ribs</h4>
+                    </div>
+                </div>
+                <div class="gallery-item wide">
+                    <img src="https://images.unsplash.com/photo-1466978913421-dad2ebd01d17?w=1200" alt="Restaurant Ambiance">
+                    <div class="gallery-overlay">
+                        <h4>Dining Experience</h4>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1558030006-450675393462?w=600" alt="Grilled Steak">
+                    <div class="gallery-overlay">
+                        <h4>Grilled Perfection</h4>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1552566626-52f8b828add9?w=600" alt="Bar Area">
+                    <div class="gallery-overlay">
+                        <h4>Premium Bar</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reservation Section -->
+    <section id="reservations" class="reservations">
+        <div class="container">
+            <h2 class="section-subtitle">Book Your Experience</h2>
+            <h3 class="section-title">Reserve Your Table</h3>
+            
+            <div class="reservation-container">
+                <form class="reservation-form" id="reservationForm">
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <input type="text" id="name" required>
+                            <label for="name">Full Name</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" required>
+                            <label for="email">Email Address</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" id="phone" required>
+                            <label for="phone">Phone Number</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="date" id="date" required>
+                            <label for="date" class="active">Date</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="time" id="time" required>
+                            <label for="time" class="active">Time</label>
+                        </div>
+                        <div class="form-group">
+                            <select id="guests" required>
+                                <option value="">Select Guests</option>
+                                <option value="1">1 Person</option>
+                                <option value="2">2 People</option>
+                                <option value="3">3 People</option>
+                                <option value="4">4 People</option>
+                                <option value="5">5 People</option>
+                                <option value="6">6+ People</option>
+                            </select>
+                            <label for="guests" class="active">Number of Guests</label>
+                        </div>
+                    </div>
+                    <div class="form-group full-width">
+                        <textarea id="message" rows="3"></textarea>
+                        <label for="message">Special Requests</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-submit">Confirm Reservation</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h2 class="section-subtitle">Get In Touch</h2>
+                    <h3 class="section-title">Visit Us</h3>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Location</h4>
+                                <p>123 Gourmet Street<br>Downtown District<br>New York, NY 10001</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <h4>Hours</h4>
+                                <p>Monday - Thursday: 11:30 AM - 10:00 PM<br>
+                                Friday - Saturday: 11:30 AM - 11:00 PM<br>
+                                Sunday: 12:00 PM - 9:00 PM</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h4>Contact</h4>
+                                <p>Phone: (555) 123-4567<br>
+                                Email: info@barbequelounge.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-map">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3024.157729389885!2d-74.00601268459395!3d40.71477497932991!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a316bb7ae8b%3A0xb13e61f5d4b480f2!2sNew%20York%2C%20NY%2010001!5e0!3m2!1sen!2sus!4v1234567890" 
+                        allowfullscreen="" 
+                        loading="lazy">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <h3 class="footer-title">The Barbeque Lounge</h3>
+                
+                <div class="footer-social">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="Swiggy" class="delivery-icon">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12.975 0C10.4 0 7.906.835 5.863 2.403c-2.045 1.566-3.458 3.803-3.966 6.283a11.798 11.798 0 0 0 .332 6.52A11.997 11.997 0 0 0 6.16 20.58a12.303 12.303 0 0 0 5.702 2.796 12.49 12.49 0 0 0 6.695-.635 12.198 12.198 0 0 0 5.213-4.057c.326-.476.311-1.118-.033-1.578l-3.527-4.705a1.157 1.157 0 0 0-1.845 0l-1.315 1.754-1.316-1.754a1.157 1.157 0 0 0-1.845 0L10.362 16.9c-.344.46-.359 1.102-.033 1.578a5.236 5.236 0 0 1-3.815-.664 5.13 5.13 0 0 1-1.988-2.367 5.034 5.034 0 0 1-.142-2.787c.217-1.063.807-2.016 1.658-2.683a5.333 5.333 0 0 1 3.298-.97c1.19.046 2.323.505 3.193 1.29.344.311.835.311 1.179 0 .344-.31.344-.748 0-1.058a7 7 0 0 0-4.188-1.692 6.997 6.997 0 0 0-4.327 1.274c-1.116.862-1.888 2.091-2.174 3.517a6.59 6.59 0 0 0 .186 3.66 6.736 6.736 0 0 0 2.61 3.106 6.895 6.895 0 0 0 3.813 1.012c.379-.008.757-.044 1.131-.108l-1.507-2.01 2.965-3.954 2.965 3.954-1.507 2.01a7.014 7.014 0 0 0 2.927-1.916 6.87 6.87 0 0 0 1.485-3.058 6.764 6.764 0 0 0-.186-3.356 6.93 6.93 0 0 0-2.223-3.01C17.52 1.289 15.3.368 12.975 0z"/>
+                        </svg>
+                    </a>
+                    <a href="#" aria-label="Zomato" class="delivery-icon">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M0 12C0 5.373 5.373 0 12 0s12 5.373 12 12-5.373 12-12 12S0 18.627 0 12zm18.015-2.236c-.388-.74-1.214-1.168-2.133-1.168-.54 0-1.06.15-1.466.43l-6.914 4.734c-.916.63-1.142 1.875-.505 2.776.388.55.997.85 1.622.85.398 0 .8-.12 1.143-.366l2.045-1.404 4.092 4.892c.477.57 1.16.87 1.857.87.548 0 1.103-.185 1.568-.565.54-.44.87-1.076.92-1.78.05-.704-.175-1.39-.644-1.916l-3.94-4.71 1.59-1.09c.92-.632 1.152-1.884.515-2.783zm-8.818-.518c1.11 0 2.006-.866 2.006-1.932 0-1.066-.897-1.932-2.006-1.932s-2.007.866-2.007 1.932c0 1.066.898 1.932 2.007 1.932zm-4.06 0c1.11 0 2.007-.866 2.007-1.932 0-1.066-.898-1.932-2.007-1.932-1.11 0-2.006.866-2.006 1.932 0 1.066.897 1.932 2.006 1.932z"/>
+                        </svg>
+                    </a>
+                </div>
+                
+                <div class="footer-bottom">
+                    <p>&copy; 2024 The Barbeque Lounge. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

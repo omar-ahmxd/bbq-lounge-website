@@ -179,24 +179,70 @@ document.querySelectorAll('.form-group input, .form-group textarea').forEach(inp
     });
 });
 
-// Reservation form submission
+// Initialize EmailJS with your Public Key
+// IMPORTANT: Replace 'YOUR_PUBLIC_KEY' with your actual EmailJS public key
+emailjs.init("YOUR_PUBLIC_KEY");
+
+// Reservation form submission with EmailJS
 reservationForm.addEventListener('submit', (e) => {
     e.preventDefault();
-    
-    // Collect form data
-    const formData = {
-        name: document.getElementById('name').value,
-        email: document.getElementById('email').value,
+
+    // Get submit button
+    const submitBtn = reservationForm.querySelector('.btn-submit');
+    const originalText = submitBtn.textContent;
+
+    // Show loading state
+    submitBtn.textContent = 'Sending reservation...';
+    submitBtn.disabled = true;
+
+    // Prepare email template parameters
+    const templateParams = {
+        to_email: 'thebarbequelounge@gmail.com',
+        from_name: document.getElementById('name').value,
+        from_email: document.getElementById('email').value,
         phone: document.getElementById('phone').value,
         date: document.getElementById('date').value,
         time: document.getElementById('time').value,
         guests: document.getElementById('guests').value,
-        message: document.getElementById('message').value
+        message: document.getElementById('message').value || 'No special requests',
+        reservation_date: new Date().toLocaleString()
     };
-    
-    // Show success message (in production, this would send to a server)
-    alert('Thank you for your reservation! We will confirm your booking shortly.');
-    reservationForm.reset();
+
+    // Send email using EmailJS
+    // IMPORTANT: Replace 'YOUR_SERVICE_ID' and 'YOUR_TEMPLATE_ID' with actual values
+    emailjs.send('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', templateParams)
+        .then(function(response) {
+            // Success
+            console.log('Reservation sent successfully!', response);
+            submitBtn.textContent = '✓ Reservation Sent!';
+            submitBtn.style.backgroundColor = '#4CAF50';
+
+            // Show confirmation
+            alert('Thank you for your reservation! We have sent the details to thebarbequelounge@gmail.com and will contact you shortly to confirm.');
+
+            // Reset form after delay
+            setTimeout(() => {
+                reservationForm.reset();
+                submitBtn.textContent = originalText;
+                submitBtn.disabled = false;
+                submitBtn.style.backgroundColor = '';
+            }, 3000);
+        })
+        .catch(function(error) {
+            // Error handling
+            console.error('Failed to send reservation:', error);
+            submitBtn.textContent = '✗ Failed - Try Again';
+            submitBtn.style.backgroundColor = '#f44336';
+
+            alert('Sorry, there was an error sending your reservation. Please try again or contact us directly at thebarbequelounge@gmail.com');
+
+            // Reset button after delay
+            setTimeout(() => {
+                submitBtn.textContent = originalText;
+                submitBtn.disabled = false;
+                submitBtn.style.backgroundColor = '';
+            }, 3000);
+        });
 });
 
 // Gallery hover effect enhancement

@@ -18,6 +18,9 @@
     
     <!-- Font Awesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- EmailJS -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 </head>
 <body>
     <!-- Loading Screen -->
@@ -70,7 +73,7 @@
     <!-- Hero Section -->
     <section id="home" class="hero">
         <div class="hero-video-container">
-            <video autoplay muted loop playsinline class="hero-video">
+            <video autoplay muted loop playsinline class="hero-video" preload="metadata">
                 <source src="vecteezy_ai-generated-beef-steaks-on-barbecue-grill-with-flames-and_40708831.mp4" type="video/mp4">
             </video>
             <div class="hero-overlay"></div>
@@ -122,9 +125,9 @@
                 </div>
                 <div class="about-images">
                     <div class="image-stack">
-                        <img src="photo-1555939594-58d7cb561ad1.avif" alt="BBQ Platter" class="stack-image stack-1">
-                        <img src="emerson-vieira-_aR4l6fj6wQ-unsplash.jpg" alt="Grill Master at Work" class="stack-image stack-2">
-                        <img src="istockphoto-2213556496-612x612.jpg" alt="Grilled Steak" class="stack-image stack-3">
+                        <img src="photo-1555939594-58d7cb561ad1.avif" alt="BBQ Platter" class="stack-image stack-1" loading="lazy">
+                        <img src="emerson-vieira-_aR4l6fj6wQ-unsplash.jpg" alt="Grill Master at Work" class="stack-image stack-2" loading="lazy">
+                        <img src="istockphoto-2213556496-612x612.jpg" alt="Grilled Steak" class="stack-image stack-3" loading="lazy">
                     </div>
                 </div>
             </div>
@@ -151,7 +154,7 @@
                     <div class="menu-grid">
                         <div class="menu-item">
                             <div class="menu-item-image">
-                                <img src="https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?w=400" alt="Smoked Wings">
+                                <img src="https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?w=400" alt="Smoked Wings" loading="lazy">
                             </div>
                             <div class="menu-item-content">
                                 <h4 class="menu-item-name">Smoked Wings</h4>
@@ -161,7 +164,7 @@
                         </div>
                         <div class="menu-item">
                             <div class="menu-item-image">
-                                <img src="https://images.unsplash.com/photo-1604908550665-327363165423?w=400" alt="Burnt Ends">
+                                <img src="https://images.unsplash.com/photo-1604908550665-327363165423?w=400" alt="Burnt Ends" loading="lazy">
                             </div>
                             <div class="menu-item-content">
                                 <h4 class="menu-item-name">Burnt Ends</h4>
@@ -171,7 +174,7 @@
                         </div>
                         <div class="menu-item">
                             <div class="menu-item-image">
-                                <img src="https://images.unsplash.com/photo-1608039755401-742074f0548d?w=400" alt="Loaded Nachos">
+                                <img src="https://images.unsplash.com/photo-1608039755401-742074f0548d?w=400" alt="Loaded Nachos" loading="lazy">
                             </div>
                             <div class="menu-item-content">
                                 <h4 class="menu-item-name">BBQ Loaded Nachos</h4>
@@ -400,7 +403,7 @@
                             <i class="fas fa-map-marker-alt"></i>
                             <div>
                                 <h4>Location</h4>
-                                <p>123 Gourmet Street<br>Downtown District<br>New York, NY 10001</p>
+                                <p>5/360, Rajiv Gandhi Salai<br>Okkiyampet, Muttukkaranchavadi<br>Thoraipakkam, Chennai<br>Tamil Nadu 600097</p>
                             </div>
                         </div>
                         <div class="contact-item">
@@ -416,17 +419,17 @@
                             <i class="fas fa-phone"></i>
                             <div>
                                 <h4>Contact</h4>
-                                <p>Phone: (555) 123-4567<br>
-                                Email: info@barbequelounge.com</p>
+                                <p>Phone: +91 9884388399<br>
+                                Email: thebarbequelounge@gmail.com</p>
                             </div>
                         </div>
                     </div>
                 </div>
                 
                 <div class="contact-map">
-                    <iframe 
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3024.157729389885!2d-74.00601268459395!3d40.71477497932991!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a316bb7ae8b%3A0xb13e61f5d4b480f2!2sNew%20York%2C%20NY%2010001!5e0!3m2!1sen!2sus!4v1234567890" 
-                        allowfullscreen="" 
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.6677047937744!2d80.24692257507571!3d12.92919098738191!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a525c5d5e5e5e5e%3A0x5e5e5e5e5e5e5e5e!2s5%2F360%2C%20Rajiv%20Gandhi%20Salai%2C%20Okkiyampet%2C%20Muttukkaranchavadi%2C%20Chennai%2C%20Thoraipakkam%2C%20Tamil%20Nadu%20600097!5e0!3m2!1sen!2sin!4v1234567890"
+                        allowfullscreen=""
                         loading="lazy">
                     </iframe>
                 </div>

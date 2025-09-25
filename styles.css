@@ -23,6 +23,13 @@
 html {
     scroll-behavior: smooth;
     overflow-x: hidden;
+    max-width: 100%;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE and Edge */
+}
+
+html::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera */
 }
 
 body {
@@ -32,6 +39,14 @@ body {
     background-color: var(--warm-white);
     overflow-x: hidden;
     cursor: none;
+    max-width: 100%;
+    position: relative;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE and Edge */
+}
+
+body::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera */
 }
 
 /* Custom Cursor */
@@ -248,9 +263,9 @@ h1, h2, h3, h4, h5, h6 {
 /* Navigation */
 .navbar {
     position: fixed;
-    top: -25px;
+    top: 0;
     width: 100%;
-    padding: 1.5rem 0;
+    padding: 0.5rem 0;
     background: rgba(255, 255, 255, 0);
     backdrop-filter: blur(0);
     z-index: 1000;
@@ -258,10 +273,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .navbar.scrolled {
-    padding: 1rem 0;
-    background: rgba(255, 255, 255, 0.95);
+    padding: 0.3rem 0;
+    background: rgba(28, 28, 28, 0.95);
     backdrop-filter: blur(10px);
-    box-shadow: 0 2px 20px var(--shadow-light);
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
 }
 
 .nav-container {
@@ -277,17 +292,17 @@ h1, h2, h3, h4, h5, h6 {
     display: flex;
     align-items: center;
     z-index: 10;
-    margin-left: -50px;
+    margin-left: 0;
 }
 
 .logo-img {
-    height: 120px;
+    height: 80px;
     width: auto;
     transition: var(--transition-smooth);
 }
 
 .navbar.scrolled .logo-img {
-    height: 90px;
+    height: 50px;
 }
 
 .nav-menu {
@@ -308,7 +323,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .navbar.scrolled .nav-link {
-    color: var(--charcoal);
+    color: var(--warm-white);
 }
 
 .nav-link::after {
@@ -341,7 +356,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .navbar.scrolled .nav-toggle span {
-    background: var(--charcoal);
+    background: var(--warm-white);
 }
 
 /* Hero Section */
